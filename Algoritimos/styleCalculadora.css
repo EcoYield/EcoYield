@@ -1,10 +1,43 @@
 body {
     background-color: #27528B;
-
+    font-family: Verdana;
 
 }
 
 header {
 
 
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    padding: 25px 50px;
+}
+
+.conteiner input {
+    border-color: white;
+    color: white;
+    background-color: #27528B;
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.conteiner button {
+    background-color: #E6BA35;
+    border-color: #27528B;
+    width: 210px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 0px 40px;
+}
+
+.conteiner input::placeholder {
+    color: white;
+    position: absolute;
+    left: 15px;
 }
