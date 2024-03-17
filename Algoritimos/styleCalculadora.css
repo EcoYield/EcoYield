@@ -1,33 +1,81 @@
 body {
     background-size: cover;
     background-color: #27528B;
-    margin: 0;
-    padding: 0;
     font-family: Verdana;
 }
 
 main{
-    margin: 30px;
+    margin: 0;
     padding: 40px;
     display: flex;
     /* flex-direction: row; padrão alinhado - horizontal */
     justify-content: space-between;
 }
-.conteiner{
-    background-color: #27528B; 
-   width: 50%;
-
-    
- }
 
 #conteinerResultado {
    background-color: #436899; 
-   padding: 35px;
+   padding: 40px;
+   height: 210px;
+   width: 400px;
    border-radius: 20px;
-   width: 50%;
+   margin: 150px 180px ;
+   display: inline;
+   float: left;
+   color: rgb(243, 240, 240);
+   
 }
 
-.header .conteinerResultado {
-  justify-content: space-between;
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    background-color: #27528B;
+    padding: 25px 50px;
+    box-shadow: 2px 0 #00000080;
+    height: 100%;
+
+}
+
+.conteiner input {
+    border-color: white;
+    color: white;
+    background-color: #27528B;
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.conteiner p {
+    font-size: 13px;
+}
+
+.conteiner .titulo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.conteiner button {
+    background-color: #E6BA35;
+    border-color: #E6BA35;
+    width: 210px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.conteiner button:hover {
+    background-color: #d7a91f;
+    border-color: #d7a91f;
  
- }
+}
+
+.conteiner input::placeholder {
+    color: rgb(181, 177, 177);
+    position: absolute;
+    left: 15px;
+}
+
