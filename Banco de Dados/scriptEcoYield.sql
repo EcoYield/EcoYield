@@ -1,5 +1,5 @@
-create database sprint1;
-use sprint1;
+create database ecoyield;
+use ecoyield;
 
 create table cadastroEmpresa (
     idEmpresa INT auto_increment,
@@ -14,7 +14,7 @@ create table cadastroEmpresa (
     PRIMARY KEY (idEmpresa)
 );
 
--- precisa colocar um check ?
+-- precisa colocar um check no email?
 
 create table loginEmpresa (
     nomeUsuario VARCHAR(50) NOT NULL,
@@ -26,16 +26,11 @@ create table loginEmpresa (
 create table ambienteEmpresa (
     idAmbiente int PRIMARY KEY auto_increment,
     departamento VARCHAR(45),
-);
-
+	qntDHT11 int,
+    qntLM35 int
     -- alertaVerde 
     -- alertaAmarelo
     -- alertaVermelho
-
-create table sensor (
-    idSensor int PRIMARY KEY auto_increment,
-    qntDHT11 int,
-    qntLM35 int
 );
 
 create table dadosSensor (
@@ -53,3 +48,15 @@ create table suporte (
     telefoneUsuario CHAR(11) NOT NULL,
     campoMensagem text NOT NULL
 );
+
+insert into cadastroEmpresa values
+(null, 'C6 Bank', '31872495000172', 'Financeiro', 01406100, 3186, 'IsabelaR', 'isabelar@sptech.school', 'isabela1234'),
+(null, 'Jazz Tech', '35496855000130', 'Financeiro',  05402100, 1368, 'Paulo', 'paulo@sptech.school', 'paulo1234'),
+(null, 'Itaú', '60701190000104', 'Financeiro', 04310050, 306, 'Luiz', 'luiz@sptech.school', 'luiz123'),
+(null, 'Accenture', '96534094000158', 'Consultoria', 04717004, 2051, 'Gustavo', 'gustavo@sptech.school', 'gustavo1234'),
+(null, 'Safra', '58160789000128', 'Financeiro', 01310300, 2100, 'João', 'joao@sptech.school', 'joao1234');
+
+insert into loginEmpresa values
+('IsabelaR', 'isabelar@sptech.school', 'isabela1234', '2024-03-18 18:47:02'),
+('Paulo', 'paulo@sptech.school', 'paulo1234', '2024-03-16 17:35:22')
+
