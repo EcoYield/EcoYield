@@ -57,8 +57,6 @@ create table leituraSensor (
     dataHora datetime
 );
 
-
-
 insert into cadastroEmpresa values
 (null, 'C6 Bank', '31872495000172', 'Financeiro', 01406100, 3186, 'IsabelaR', 'isabelar@sptech.school', 'isabela1234'),
 (null, 'Jazz Tech', '35496855000130', 'Financeiro',  05402100, 1368, 'Paulo', 'paulo@sptech.school', 'paulo1234'),
@@ -69,5 +67,5 @@ insert into cadastroEmpresa values
 insert into loginEmpresa values
 ('IsabelaR', 'isabelar@sptech.school', 'isabela1234', '2024-03-18 18:47:02'),
 ('Paulo', 'paulo@sptech.school', 'paulo1234', '2024-03-16 17:35:22')
->>>>>>> 2d86c31e7f1bf9ce7c2c33fb15b8a3ac23f958fa
+
 
