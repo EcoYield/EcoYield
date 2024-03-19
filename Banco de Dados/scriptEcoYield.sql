@@ -36,7 +36,7 @@ create table suporte (
 create table ambienteEmpresa (
     idAmbiente int auto_increment,
     descricao VARCHAR(45) DEFAULT 'Adicionar Descrição',
-    PRIMARY KEY (idAmbiente),
+    PRIMARY KEY (idAmbiente)
 );
 
 create table sensor (
@@ -59,4 +59,15 @@ create table leituraSensor (
 
 
 
+insert into cadastroEmpresa values
+(null, 'C6 Bank', '31872495000172', 'Financeiro', 01406100, 3186, 'IsabelaR', 'isabelar@sptech.school', 'isabela1234'),
+(null, 'Jazz Tech', '35496855000130', 'Financeiro',  05402100, 1368, 'Paulo', 'paulo@sptech.school', 'paulo1234'),
+(null, 'Itaú', '60701190000104', 'Financeiro', 04310050, 306, 'Luiz', 'luiz@sptech.school', 'luiz123'),
+(null, 'Accenture', '96534094000158', 'Consultoria', 04717004, 2051, 'Gustavo', 'gustavo@sptech.school', 'gustavo1234'),
+(null, 'Safra', '58160789000128', 'Financeiro', 01310300, 2100, 'João', 'joao@sptech.school', 'joao1234');
+
+insert into loginEmpresa values
+('IsabelaR', 'isabelar@sptech.school', 'isabela1234', '2024-03-18 18:47:02'),
+('Paulo', 'paulo@sptech.school', 'paulo1234', '2024-03-16 17:35:22')
+>>>>>>> 2d86c31e7f1bf9ce7c2c33fb15b8a3ac23f958fa
 
