@@ -12,7 +12,7 @@ float temperatura2; // Variável que armazenará a temperatura medida
 //Função que será executada uma vez quando ligar ou resetar o Arduino
 void setup() {
   Serial.begin(9600);
-  dht_1.begin();
+  dht_1.begin(9600);
 }
 
 void loop() {
@@ -20,7 +20,7 @@ void loop() {
   float temperatura = dht_1.readTemperature();
   temperatura2 = (float(analogRead(LM35))*5/(1023))/0.01;
     Serial.print(temperatura2);
-  if(isnan(temperatura) or isnan(umidade)){
+  if(isnan(temperatura) or isnan(umidade)){b
     Serial.println("Erro ao ler"); 
   } else {
      Serial.print(" , ");

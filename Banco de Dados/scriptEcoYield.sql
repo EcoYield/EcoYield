@@ -43,7 +43,7 @@ create table sensor (
     idSensor int auto_increment,
     tipo char (3) not null,
     quantidade int not null,
-    alertaVerde int,
+    alertaVerde int, 
     alertaAmarelo int,
     alertaVermelho int,
     CONSTRAINT check_tipo check (tipo('UMI','TEM'))
@@ -66,6 +66,7 @@ insert into cadastroEmpresa values
 
 insert into loginEmpresa values
 ('IsabelaR', 'isabelar@sptech.school', 'isabela1234', '2024-03-18 18:47:02'),
-('Paulo', 'paulo@sptech.school', 'paulo1234', '2024-03-16 17:35:22')
+('Paulo', 'paulo@sptech.school', 'paulo1234', '2024-03-16 17:35:22');
+
 
 
