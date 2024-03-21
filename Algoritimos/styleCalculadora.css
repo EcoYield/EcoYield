@@ -15,14 +15,13 @@ main{
 #conteinerResultado {
    background-color: #436899; 
    padding: 40px;
-   height: 210px;
+   height: 62vh;
    width: 400px;
    border-radius: 20px;
-   margin: 150px 180px ;
+   margin: 100px 140px ;
    display: inline;
    float: left;
    color: rgb(243, 240, 240);
-   
 }
 
 .conteiner {
@@ -34,7 +33,7 @@ main{
     background-color: #27528B;
     padding: 25px 50px;
     box-shadow: 2px 0 #00000080;
-    height: 100%;
+    height: 94%;
 
 }
 
